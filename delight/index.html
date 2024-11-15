@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ice Cream Delight</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fef3f2;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #ff6f61;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+nav .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: white;
+  font-size: 1.2em;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav .nav-links a:hover {
+  background-color: #d7006e;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('ice-cream-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #d7006e;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.cta-btn {
+  background-color: #ffcccb;
+  color: #d7006e;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #ff6f61;
+}
+
+/* Flavors Section */
+.flavors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 20px;
+}
+
+.flavor-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.flavor-card:hover {
+  transform: scale(1.05);
+}
+
+.flavor-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.flavor-card h3 {
+  margin: 15px 0;
+  font-size: 1.6em;
+  color: #ff6f61;
+}
+
+.flavor-card p {
+  color: #555;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #ffcccb;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+  text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background-color: #d7006e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background-color: #ff6f61;
+}
+
+/* Footer */
+footer {
+  background-color: #ffcccb;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+
+footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer .social-media {
+  list-style: none;
+  padding: 20px 0;
+}
+
+footer .social-media li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer .social-media a {
+  font-size: 1.2em;
+  color: #d7006e;
+}
+
+footer .newsletter {
+  margin-top: 20px;
+}
+
+footer .newsletter input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+footer .newsletter button {
+  background-color: #d7006e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer .newsletter button:hover {
+    background-color: #ff6f61;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Ice Cream Delight</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#flavors">Flavors</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Ice Cream Delight</h1>
+      <p>Indulge in the creamiest, most delicious ice cream you'll ever taste!</p>
+      <a href="#flavors" class="cta-btn">Explore Our Flavors</a>
+    </div>
+  </section>
+
+  <!-- Ice Cream Flavors Section -->
+  <main id="flavors">
+    <section class="flavors">
+      <h2>Our Flavors</h2>
+      <div class="flavor-card">
+        <img src="vanila.jpg" alt="Vanilla Ice Cream">
+        <h3>Vanilla</h3>
+        <p class="description">Classic and creamy, made with real vanilla beans.</p>
+      </div>
+      <div class="flavor-card">
+        <img src="chocolate.jpg" alt="Chocolate Ice Cream">
+        <h3>Chocolate</h3>
+        <p class="description">Rich, smooth, and made with the finest cocoa.</p>
+      </div>
+      <div class="flavor-card">
+        <img src="strawberry (1).jpg" alt="Strawberry Ice Cream">
+        <h3>Strawberry</h3>
+        <p class="description">Sweet and refreshing, made with fresh strawberries.</p>
+      </div>
+      <div class="flavor-card">
+        <img src="images (1).jpg" alt="Mint Chocolate Chip">
+        <h3>Mint Chocolate Chip</h3>
+        <p class="description">Cool mint ice cream with crunchy chocolate chips.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form action="#">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 Ice Cream Delight</p>
+      <ul class="social-media">
+        <li><a href="#" class="facebook">Facebook</a></li>
+        <li><a href="#" class="instagram">Instagram</a></li>
+        <li><a href="#" class="twitter">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
